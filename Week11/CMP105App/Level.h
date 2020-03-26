@@ -6,6 +6,9 @@
 #include "Framework/GameState.h"
 #include <string>
 #include <iostream>
+#include "GravBall.h"
+#include "Game.h"
+#include "menu.h"
 
 
 class Level{
@@ -27,4 +30,9 @@ private:
 	Input* input;
 	GameState* gameState;
 	AudioManager* audio;
+	GravBall gravBall;
+	sf::Texture gravBallText;
+
+	Game game;
+	menu Menu;
 };
